@@ -1,8 +1,32 @@
+@import './../../../SASS/mixins.scss';
+@import './../../../SASS/variabls.scss';
+
+
 .HeaderBG {
     display: flex;
     margin: 30px 30px 0px 30px;
 }
 
-.HeaderTextBlock{
-    
+.HeaderTextTime {
+    @include text (64px, Work Sans, $TextColor, 500);
+}
+
+.HeaderTextDate {
+    @include text (16px, Work Sans, $TextColor, 500);
+}
+
+.HeaderTextDayTime {
+    @include text (24px, Work Sans, $TextColor, 500);
+    margin-top: 20px;
+}
+
+.HeaderTextImgAndTextDay {
+    display: flex;
+}
+
+.HeaderTextImg {
+    color: white;
+    height: 30px;
+    margin-top: 20px;
+    margin-right: 10px;
 }

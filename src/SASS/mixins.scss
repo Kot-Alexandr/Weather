@@ -1,0 +1,21 @@
+@import './variabls.scss';
+
+@mixin textItalic ($size, $font, $color) {
+    font-size: $size;
+    font-family: $font;
+    color: $color;
+    font-style: italic;
+}
+
+@mixin text ($size, $font, $color, $weight) {
+    font-size: $size;
+    font-family: $font;
+    color: $color;
+    font-weight: $weight;
+}
+
+@mixin flexy ($justi, $align) {
+    display: flex;
+    justify-content: $justi;
+    align-items: $align;
+}
