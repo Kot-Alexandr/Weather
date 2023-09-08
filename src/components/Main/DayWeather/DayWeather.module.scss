@@ -1,0 +1,42 @@
+@import './../../../SASS/mixins.scss';
+@import './../../../SASS/variabls.scss';
+
+.DailyWeatherT {
+    background-color: rgb(93, 104, 203);
+    border-radius: 30px;
+    border-color: rgb(93, 104, 203);
+    margin: 30px 8px 0 5px;
+    height: 125px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.DailyWeather {
+    background-color: rgb(35, 41, 95);
+    border-radius: 30px;
+    border-color: rgb(35, 41, 95);
+    margin: 30px 8px 0 5px;
+    height: 125px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.DWTemerature {
+    margin-top: 5px;
+    @include text (12px, Work Sans, $TextColor, 400);
+}
+
+.DWdayName {
+    margin-top: 15px;
+    @include text (12px, Work Sans, $TextColor, 400);
+}
+
+.DWdayImg {
+    height: 50px;
+}
