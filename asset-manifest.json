@@ -1,14 +1,21 @@
 {
   "files": {
-    "main.css": "/Weather/static/css/main.84c6ae98.css",
-    "main.js": "/Weather/static/js/main.2471effb.js",
+    "main.css": "/Weather/static/css/main.e34c6f4d.css",
+    "main.js": "/Weather/static/js/main.b3043a2f.js",
+    "static/media/SnowDay.svg": "/Weather/static/media/SnowDay.a16a66076814728d69c70c2df15c5104.svg",
+    "static/media/WindyDay.svg": "/Weather/static/media/WindyDay.80733b8d773e55ab2ee4f3cb585c29bf.svg",
+    "static/media/CloudyDay.svg": "/Weather/static/media/CloudyDay.1b9430f5a92cb9f64faf7ec100480056.svg",
+    "static/media/RainyDay.svg": "/Weather/static/media/RainyDay.921470c4905635b46c7cb66fd463fe25.svg",
+    "static/media/PartlyCloudyDay.svg": "/Weather/static/media/PartlyCloudyDay.8faebdea1b139c4863fadd1b5df6ef4f.svg",
     "static/media/sun.svg": "/Weather/static/media/sun.b252e5be8a52a330f14480f937b6b0d9.svg",
+    "static/media/SunnyDay.svg": "/Weather/static/media/SunnyDay.037f151d9892588c12ee0835b417a7f0.svg",
+    "static/media/ThunderDay.svg": "/Weather/static/media/ThunderDay.a10af50317efa48221211863872c4881.svg",
     "index.html": "/Weather/index.html",
-    "main.84c6ae98.css.map": "/Weather/static/css/main.84c6ae98.css.map",
-    "main.2471effb.js.map": "/Weather/static/js/main.2471effb.js.map"
+    "main.e34c6f4d.css.map": "/Weather/static/css/main.e34c6f4d.css.map",
+    "main.b3043a2f.js.map": "/Weather/static/js/main.b3043a2f.js.map"
   },
   "entrypoints": [
-    "static/css/main.84c6ae98.css",
-    "static/js/main.2471effb.js"
+    "static/css/main.e34c6f4d.css",
+    "static/js/main.b3043a2f.js"
   ]
 }
