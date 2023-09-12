@@ -8,15 +8,15 @@
 }
 
 .HeaderTextTime {
-    @include text (64px, Work Sans, $TextColor, 500);
+    @include text (64px, Work Sans, var(#{--header-text-default}), 500);
 }
 
 .HeaderTextDate {
-    @include text (16px, Work Sans, $TextColor, 500);
+    @include text (16px, Work Sans, var(#{--header-text-default}), 500);
 }
 
 .HeaderTextDayTime {
-    @include text (24px, Work Sans, $TextColor, 500);
+    @include text (24px, Work Sans, var(#{--header-text-default}), 500);
     margin-top: 20px;
 }
 
@@ -25,8 +25,37 @@
 }
 
 .HeaderTextImg {
-    color: white;
+    color: var(#{--header-text-default});
     height: 30px;
+    width: 25px;
     margin-top: 20px;
     margin-right: 10px;
+}
+
+.HeaderSwitcherBox {
+    @include flexy (space-between, center)
+}
+
+.HeaderSwitcher {
+    margin-left: 70vh;
+    background-color: var(#{--component-background-switcher-day-default});
+    border-radius: 25px;
+    width: 120px;
+    height: 50px;
+    @include flexy (space-around, center)
+}
+
+.HeaderSwitcherIMGChosen {
+    height: 30px;
+    width: auto;
+    background-color: var(#{--component-background-chosen-default});
+    box-shadow: 0 0 2px 5px var(#{--component-background-chosen-default});
+    border-radius: 15px;
+    transition: all 0.5s ease 0s
+}
+
+.HeaderSwitcherIMG {
+    height: 30px;
+    width: auto;
+    transition: all 0.5s ease 0s
 }

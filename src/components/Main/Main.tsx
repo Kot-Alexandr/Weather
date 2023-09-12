@@ -3,6 +3,9 @@ import s from './Main.module.scss'
 import WeekWeather from './WeekWeather/WeekWeather'
 
 const Main = () => {
+
+    
+
     return (
         <div className={s.MainBG}>
             <div className={s.MainLeftSide}>
