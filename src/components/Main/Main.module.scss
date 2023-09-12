@@ -5,10 +5,10 @@
 
 .MainLeftSide{
     width: 65%;
-    background-color: rgb(26, 31, 74);
+    background-color: var(#{--body-background-left-default});
 }
 
 .MainRightSide{
     width: 35%;
-    background-color: rgb(14, 13, 54);
+    background-color: var(#{--body-background-right-default});
 }

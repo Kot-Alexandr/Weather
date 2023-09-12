@@ -2,9 +2,9 @@
 @import './../../../SASS/variabls.scss';
 
 .DailyWeatherT {
-    background-color: rgb(93, 104, 203);
+    background-color: var(#{--component-background-chosen-default});
     border-radius: 30px;
-    border-color: rgb(93, 104, 203);
+    border-color: var(#{--component-background-chosen-default});
     margin: 30px 8px 0 5px;
     height: 125px;
     width: 100px;
@@ -15,9 +15,9 @@
 }
 
 .DailyWeather {
-    background-color: rgb(35, 41, 95);
+    background-color: var(#{--component-background-switcher-day-default});
     border-radius: 30px;
-    border-color: rgb(35, 41, 95);
+    border-color: var(#{--component-background-switcher-day-default});
     margin: 30px 8px 0 5px;
     height: 125px;
     width: 100px;
@@ -29,12 +29,12 @@
 
 .DWTemerature {
     margin-top: 5px;
-    @include text (12px, Work Sans, $TextColor, 400);
+    @include text (12px, Work Sans, var(#{--header-text-sun-default}), 400);
 }
 
 .DWdayName {
     margin-top: 15px;
-    @include text (12px, Work Sans, $TextColor, 400);
+    @include text (12px, Work Sans, var(#{--header-text-sun-default}), 400);
 }
 
 .DWdayImg {
