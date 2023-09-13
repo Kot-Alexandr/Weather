@@ -1,0 +1,26 @@
+@import './../../../../SASS/mixins.scss';
+@import './../../../../SASS/variabls.scss';
+
+.LineTownSunriseSunSetBG {
+    width: 80%;
+    margin: 10px 0 10px 0;
+    @include flexy(space-between, center);
+}
+
+
+.LTSSText {
+    @include text (14px, Work Sans, var(#{--header-text-default}), 500);
+}
+.LTSSTime{
+    @include text (14px, Work Sans, rgb(210, 212, 226), 500);  
+}
+
+.LTSSImg {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.LTSSBlocks{
+    @include flexy(flex-start, center);
+}

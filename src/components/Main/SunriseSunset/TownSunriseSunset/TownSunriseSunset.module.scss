@@ -1,0 +1,68 @@
+@import './../../../../SASS/mixins.scss';
+@import './../../../../SASS/variabls.scss';
+
+.TownSunriseSunsetBG {
+    background-color: var(#{--component-background-TSS-default});
+    width: 80%;
+    margin: 20px 0 5px 0;
+    border-radius: 20px;
+    @include flexy(center, center);
+    flex-direction: column;
+}
+
+.TSSHead {
+    @include flexy(space-between, center);
+    width: 90%;
+    margin: 10px 0 10px 0;
+    .TSSTownNameAndImg{
+        @include flexy(center, center);
+        .TSSHeadText{
+            @include text (14px, Work Sans, var(#{--text-default}), 500);
+        }
+        .TSSTownImg{
+            width: 20px;
+            height: 20px;
+            margin-right: 2px;
+        }
+    }
+    .TSSHeadImg{
+        width: 20px;
+        height: 20px; 
+    }
+   }
+
+.TSSInformationBlock {
+    @include flexy(space-between, center);
+    width: 90%;
+    margin-bottom: 10px;
+    .TSSSunBlock{
+        @include flexy(flex-start, center);
+        width: 50%;
+        .TSSSunIMG{
+            width: 50px;
+            height: 50px;
+            margin-right: 15px;
+        }
+        .TSSSunText{
+            @include text (12px, Work Sans, rgb(210, 212, 226), 500);
+        }
+        .TSSSunTime{
+            @include text (16px, Work Sans, rgb(125, 169, 255), 500);
+        }
+      }
+      .TSSMoonBlock{
+        @include flexy(flex-start, center);
+        width: 50%;
+        .TSSMoonIMG{
+            width: 50px;
+            height: 50px;
+            margin-right: 15px;
+        }
+        .TSSMoonText{
+            @include text (12px, Work Sans, rgb(210, 212, 226), 500);
+        }
+        .TSSMoonTime{
+            @include text (16px, Work Sans, rgb(125, 169, 255), 500);
+        }
+      }
+}

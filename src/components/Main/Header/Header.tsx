@@ -14,7 +14,7 @@ const Header = () => {
     useEffect(() => {
         const root = document.querySelector(':root') as HTMLElement
 
-        const components = ['body-background-left', 'body-background-right', 'header-text', 'header-text-sun', 'component-background-chosen', 'component-background-switcher-day']
+        const components = ['body-background-left', 'body-background-right', 'header-text', 'text', 'component-background-chosen', 'component-background-switcher-day', 'component-background-TSS']
 
         components.forEach((component) => {
             root.style.setProperty(`--${component}-default`,

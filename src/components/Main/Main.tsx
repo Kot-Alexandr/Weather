@@ -1,5 +1,6 @@
 import Header from './Header/Header'
 import s from './Main.module.scss'
+import SunriseSunset from './SunriseSunset/SunriseSunset'
 import WeekWeather from './WeekWeather/WeekWeather'
 
 const Main = () => {
@@ -11,6 +12,7 @@ const Main = () => {
             <div className={s.MainLeftSide}>
                 <Header />
                 <WeekWeather/>
+                <SunriseSunset/>
             </div>
             <div className={s.MainRightSide}>Buy umbrela</div>
         </div>
