@@ -13,16 +13,17 @@ const WeekWeather = () => {
 
     let today = new Date();
     let todayMark = today.getDay()
+    const days = [{ today: 'Mon', mark: 1, img: WindyDay },
+    { today: 'Tue', mark: 2, img: RainyDay },
+    { today: 'Wen', mark: 3, img: SnowDay },
+    { today: 'Thu', mark: 4, img: CloudyDay },
+    { today: 'Fri', mark: 5, img: PartlyCloudyDay },
+    { today: 'Sat', mark: 6, img: ThunderDay },
+    { today: 'Sun', mark: 0, img: SunnyDay }]
 
     return (
         <div className={s.WeeklyWeather}>
-            <DayWeather day={'Mon'} isToday={todayMark===1} temp={'22°'} weatherPick={WindyDay} />
-            <DayWeather day={'Tue'} isToday={todayMark===2} temp={'18°'} weatherPick={RainyDay} />
-            <DayWeather day={'Wen'} isToday={todayMark===3} temp={'15°'} weatherPick={SnowDay} />
-            <DayWeather day={'Thu'} isToday={todayMark===4} temp={'25°'} weatherPick={CloudyDay} />
-            <DayWeather day={'Fri'} isToday={todayMark===5} temp={'28°'} weatherPick={PartlyCloudyDay} />
-            <DayWeather day={'Sat'} isToday={todayMark===6} temp={'30°'} weatherPick={ThunderDay} />
-            <DayWeather day={'Sun'} isToday={todayMark===0} temp={'32°'} weatherPick={SunnyDay} />
+            {days.map((today) => <DayWeather day={today.today} isToday={todayMark === today.mark} weatherPick={today.img} />)}
         </div>
     )
 }
