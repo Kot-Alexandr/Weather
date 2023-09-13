@@ -29,12 +29,12 @@
 
 .DWTemerature {
     margin-top: 5px;
-    @include text (12px, Work Sans, var(#{--header-text-sun-default}), 400);
+    @include text (12px, Work Sans, var(#{--text-default}), 400);
 }
 
 .DWdayName {
     margin-top: 15px;
-    @include text (12px, Work Sans, var(#{--header-text-sun-default}), 400);
+    @include text (12px, Work Sans, var(#{--text-default}), 400);
 }
 
 .DWdayImg {

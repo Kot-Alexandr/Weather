@@ -1,0 +1,25 @@
+@import './../../../SASS/mixins.scss';
+@import './../../../SASS/variabls.scss';
+
+.SunRiseSetBackground {
+    margin: 20px 0 30px 30px;
+    background-color: var(#{--component-background-switcher-day-default});
+    border-radius: 25px;
+    width: 450px;
+    @include flexy(center, center);
+    flex-direction: column;
+}
+
+.SunRiseSetTextPlus {
+    @include flexy(space-between, center);
+    width: 80%;
+    margin-top: 20px;
+}
+
+.SunRiseSetText {
+    @include text (16px, Work Sans, var(#{--text-default}), 500);
+}
+
+.SunRiseSetIMG {
+    width: 20px;
+}

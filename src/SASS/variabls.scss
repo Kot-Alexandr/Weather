@@ -8,12 +8,18 @@ $body-background-right-light: rgb(255, 255, 255);
 //header-text
 $header-text-dark: rgb(255, 255, 255);
 $header-text-light: rgb(91, 145, 255);
+//text
+$text-dark: rgb(255, 255, 255);
+$text-light: rgb(0, 0, 0);
 //component-background-chosen
 $component-background-chosen-dark: rgb(128, 170, 255);
 $component-background-chosen-light: rgb(106, 155, 255);
 //component-background-switcher-day
 $component-background-switcher-day-dark: rgb(61, 59, 113);
 $component-background-switcher-day-light: rgb(255, 255, 255);
+//component-background-TSS
+$component-background-TSS-dark: rgb(50, 48, 95);
+$component-background-TSS-light: rgb(255, 248, 240);
 
 :root {
     //body-left
@@ -28,6 +34,10 @@ $component-background-switcher-day-light: rgb(255, 255, 255);
     --header-text-dark: #{$header-text-dark};
     --header-text-light: #{$header-text-light};
     --header-text-default: var(#{$header-text-dark});
+    //text
+    --text-dark: #{$text-dark};
+    --text-light: #{$text-light};
+    --text-default: var(#{$text-dark});
     //component-background-chosen
     --component-background-chosen-dark: #{$component-background-chosen-dark};
     --component-background-chosen-light: #{$component-background-chosen-light};
@@ -36,4 +46,8 @@ $component-background-switcher-day-light: rgb(255, 255, 255);
     --component-background-switcher-day-dark: #{$component-background-switcher-day-dark};
     --component-background-switcher-day-light: #{$component-background-switcher-day-light};
     --component-background-switcher-day-default: var(#{$component-background-switcher-day-dark});
+     //component-background-TSS
+     --component-background-TSS-dark: #{$component-background-TSS-dark};
+     --component-background-TSS-light: #{$component-background-TSS-light};
+     --component-background-TSS-default: var(#{$component-background-TSS-dark});
 }
