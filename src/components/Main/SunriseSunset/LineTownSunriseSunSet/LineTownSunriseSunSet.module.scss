@@ -10,6 +10,7 @@
 
 .LTSSText {
     @include text (14px, Work Sans, var(#{--header-text-default}), 500);
+    width: 70px
 }
 .LTSSTime{
     @include text (14px, Work Sans, rgb(210, 212, 226), 500);  

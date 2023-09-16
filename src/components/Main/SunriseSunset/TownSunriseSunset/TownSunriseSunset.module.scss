@@ -4,7 +4,7 @@
 .TownSunriseSunsetBG {
     background-color: var(#{--component-background-TSS-default});
     width: 80%;
-    margin: 20px 0 5px 0;
+    margin: 10px 0 20px 0;
     border-radius: 20px;
     @include flexy(center, center);
     flex-direction: column;
