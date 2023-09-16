@@ -9,6 +9,7 @@
 
 .HeaderTextTime {
     @include text (64px, Work Sans, var(#{--header-text-default}), 500);
+    white-space: nowrap;
 }
 
 .HeaderTextDate {
