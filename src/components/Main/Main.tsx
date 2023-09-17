@@ -20,11 +20,11 @@ const Main = () => {
         SunriseTime: "8:50 AM",
         SunsetTime: "8:52 PM"
     },
-    {
-        Town: "Madeira",
-        SunriseTime: "5:30 AM",
-        SunsetTime: "9:30 PM"
-    }
+    // {
+    //     Town: "Madeira",
+    //     SunriseTime: "5:30 AM",
+    //     SunsetTime: "9:30 PM"
+    // }
     ]
 
 
@@ -34,6 +34,7 @@ const Main = () => {
                 <Header />
                 <WeekWeather />
                 <SunriseSunset data={SunsetSunriseArray} />
+        
             </div>
             <div className={s.MainRightSide}>Buy umbrela</div>
         </div>
