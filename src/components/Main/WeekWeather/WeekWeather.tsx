@@ -9,21 +9,19 @@ import ThunderDay from './../../../accets/img/DailyImgWeather/ThunderDay.svg'
 import WindyDay from './../../../accets/img/DailyImgWeather/WindyDay.svg'
 
 
-const WeekWeather = () => {
+const WeekWeather = (props: any) => {
 
-    let today = new Date();
-    let todayMark = today.getDay()
-    const days = [{ today: 'Mon', mark: 1, img: WindyDay },
-    { today: 'Tue', mark: 2, img: RainyDay },
-    { today: 'Wen', mark: 3, img: SnowDay },
-    { today: 'Thu', mark: 4, img: CloudyDay },
-    { today: 'Fri', mark: 5, img: PartlyCloudyDay },
-    { today: 'Sat', mark: 6, img: ThunderDay },
-    { today: 'Sun', mark: 0, img: SunnyDay }]
+    const days = [{ today: 'Mon', mark: 1, img: WindyDay, temp: '22°' },
+    { today: 'Tue', mark: 2, img: RainyDay, temp: '18°' },
+    { today: 'Wen', mark: 3, img: SnowDay, temp: '15°' },
+    { today: 'Thu', mark: 4, img: CloudyDay, temp: '25°' },
+    { today: 'Fri', mark: 5, img: PartlyCloudyDay, temp: '28°' },
+    { today: 'Sat', mark: 6, img: ThunderDay, temp: '30°' },
+    { today: 'Sun', mark: 0, img: SunnyDay, temp: '32°' }]
 
     return (
         <div className={s.WeeklyWeather}>
-            {days.map((today) => <DayWeather day={today.today} isToday={todayMark === today.mark} weatherPick={today.img} />)}
+            {days.map((today) => <DayWeather day={today.today} isToday={props.todayMark === today.mark} weatherPick={today.img} temp={today.temp} />)}
         </div>
     )
 }
