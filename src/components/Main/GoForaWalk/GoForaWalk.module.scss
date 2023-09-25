@@ -1,0 +1,92 @@
+@import './../../../SASS/mixins.scss';
+@import './../../../SASS/variabls.scss';
+
+
+.GoForaWalkBG {
+    margin: 20px 30px 30px 30px;
+    background-color: var(#{--component-background-switcher-day-default});
+    border-radius: 25px;
+    width: 50%;
+    @include flexy('', center);
+    flex-direction: column;
+}
+
+.GoForaWalkBody {
+    width: 80%;
+    @include flexy(center, center);
+    flex-direction: column;
+
+    .GoForaWalkTop {
+        background-color: var(#{--component-background-TSS-default});
+        margin: 20px 10px 20px 10px;
+        width: 100%;
+        border-radius: 20px;
+        @include flexy('', flex-start);
+        flex-direction: column;
+
+        .GoForaWalkTopParamBlock {
+            @include flexy(space-between, '');
+            width: 90%;
+
+            .GoForaWalkParameter {
+                @include text (16px, Work Sans, var(#{--header-text-default}), 500);
+                margin: 10px 0 5px 20px;
+            }
+
+            .GoForaWalkParameterIMG {
+                width: 40px;
+                height: auto;
+            }
+        }
+    }
+
+    .GoForaWalkBot {
+        background-color: var(#{--component-background-TSS-default});
+        margin: 10px 10px 20px 10px;
+        border-radius: 20px;
+        width: 100%;
+        @include flexy(center, flex-start);
+        flex-direction: column;
+
+        .GoForaWalkBotTextSpecial {
+            @include text (16px, Work Sans, rgb(255, 188, 112), 500);
+            margin: 5px 0 5px 15px;
+        }
+
+        .GoForaWalkBotText {
+            @include text (16px, Work Sans, var(#{--header-text-default}), 500);
+            width: 100%;
+        }
+
+        .GoForaWalkIMG {
+            height: 60px;
+            width: 60px;
+        }
+        .GoForaWalkBotTextB{
+            @include text (14px, Work Sans, var(#{--header-text-default}), 500);
+            @include flexy(space-between, flex-end);
+            width: 90%;
+            margin: 5px 0 5px 15px;
+        }
+    }
+}
+
+
+.GoForaWalkAbout {
+    margin-top: 20px;
+    @include flexy(space-between, '');
+    width: 80%;
+
+    .GoForaWalkAboutText {
+        @include text (16px, Work Sans, var(#{--text-default}), 500);
+    }
+
+    .GoForaWalkAboutTownBlock {
+        display: flex;
+
+        .GoForaWalkAboutIMG {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
