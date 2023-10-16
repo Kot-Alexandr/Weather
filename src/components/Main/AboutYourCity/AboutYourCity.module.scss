@@ -1,0 +1,49 @@
+@import './../../../SASS/mixins.scss';
+@import './../../../SASS/variabls.scss';
+
+.DailyWeather1 {
+    background-color: rgb(108, 157, 255);
+    border-radius: 30px;
+    border: 5px;
+    border-color: rgb(108, 157, 255);
+    margin: 30px 8px 0 5px;
+    height: 125px;
+    width: 100px;
+    @include flexy (center, center);
+    flex-direction: column;
+    cursor: grab;
+    backface-visibility: hidden;
+}
+
+.DailyWeather2 {
+    background-color: rgb(255, 121, 170);
+    border-radius: 30px;
+    border: 5px;
+    border-color: rgb(255, 121, 170);
+    margin: 30px 8px 0 5px;
+    height: 125px;
+    width: 100px;
+    @include flexy (center, center);
+    flex-direction: column;
+    cursor: grab;
+    backface-visibility: hidden;
+}
+
+.DailyWeather3 {
+    background-color: rgb(255, 181, 97);
+    border-radius: 30px;
+    border: 5px;
+    border-color: rgb(255, 181, 97);
+    margin: 30px 8px 0 5px;
+    height: 125px;
+    width: 100px;
+    @include flexy (center, center);
+    flex-direction: column;
+    cursor: grab;
+    backface-visibility: hidden;
+}
+
+// .DWTemerature {
+//     margin-top: 5px;
+//     @include text (12px, Work Sans, var(#{--text-default}), 400);
+// }
