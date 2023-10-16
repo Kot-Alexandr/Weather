@@ -1,0 +1,58 @@
+@import './../../../SASS/mixins.scss';
+@import './../../../SASS/variabls.scss';
+
+
+.SearchBG {
+    margin: 42px 30px 0px 30px;
+    position: relative;
+}
+
+.SearchDiv {
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 27px;
+    z-index: 9;
+    background-color: var(#{--component-background-search-default});
+    width: 200px;
+    line-height: 1.5;
+}
+
+.SearchDiv:last-child {
+    border-radius: 0 0 15px 15px;
+}
+
+
+.InputStyle {
+    padding-left: 35px;
+    height: 40px;
+    border-radius: 15px;
+    border: 0px;
+    width: 200px;
+    background-color: var(#{--component-background-search-default});
+    z-index: 10;
+    box-sizing: border-box;
+    margin: 0;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.InputIMG {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.SearchIMG {
+    margin: 10px 10px 0 10px;
+    height: 15px;
+    width: 15px;
+    position: relative;
+    z-index: 10;
+}

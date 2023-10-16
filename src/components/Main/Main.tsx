@@ -1,8 +1,11 @@
+import { useState } from 'react'
+import AboutYourCity from './AboutYourCity/AboutYourCity'
 import GoForaWalk from './GoForaWalk/GoForaWalk'
 import Header from './Header/Header'
 import s from './Main.module.scss'
 import SunriseSunset from './SunriseSunset/SunriseSunset'
 import WeekWeather from './WeekWeather/WeekWeather'
+import Search from './Search/Search'
 
 const Main = () => {
 
@@ -90,7 +93,6 @@ const Main = () => {
     let today = new Date();
     let todayMark = today.getDay()
 
-
     return (
         <div className={s.MainBG}>
             <div className={s.MainLeftSide}>
@@ -101,7 +103,12 @@ const Main = () => {
                     <GoForaWalk Town={'Dhaka'} dataToWalk={dataToWalk} toDayMark={todayMark} />
                 </div>
             </div>
-            <div className={s.MainRightSide}>Buy umbrela</div>
+            <div className={s.MainRightSide}>
+                <Search />
+                <div className={s.MainRightSideInformation}>
+                    <AboutYourCity />
+                </div>
+            </div>
         </div>
     )
 }

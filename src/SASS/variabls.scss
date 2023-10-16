@@ -20,6 +20,9 @@ $component-background-switcher-day-light: rgb(255, 255, 255);
 //component-background-TSS
 $component-background-TSS-dark: rgb(50, 48, 95);
 $component-background-TSS-light: rgb(255, 248, 240);
+//component-background-search
+$component-background-search-dark: rgb(61, 59, 113);
+$component-background-search-light: rgb(238, 243, 255);
 
 :root {
     //body-left
@@ -50,4 +53,8 @@ $component-background-TSS-light: rgb(255, 248, 240);
      --component-background-TSS-dark: #{$component-background-TSS-dark};
      --component-background-TSS-light: #{$component-background-TSS-light};
      --component-background-TSS-default: var(#{$component-background-TSS-dark});
+      //component-background-search
+      --component-background-search-dark: #{$component-background-search-dark};
+      --component-background-search-light: #{$component-background-search-light};
+      --component-background-search-default: var(#{$component-background-search-dark});
 }

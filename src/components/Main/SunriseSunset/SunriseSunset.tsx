@@ -15,9 +15,7 @@ type DataType = {
 
 const SunriseSunset = (props: SunriseSunsetProps) => {
 
-    console.log(props.data)
-
-    return (
+       return (
         <div className={s.SunRiseSetBackground}>
             <div className={s.SunRiseSetTextPlus}>
                 <div className={s.SunRiseSetText}>Sunrise & Sunset</div>

@@ -43,8 +43,6 @@ const GoForaWalk = (props: GoForaWalkProps) => {
     let whatToDo
     count >= 3 ? whatToDo = true : whatToDo = false
 
-    console.log(count)
-    console.log(whatToDo)
 
     return (
         <div className={s.GoForaWalkBG}>
